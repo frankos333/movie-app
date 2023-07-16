@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Movie List Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Movie List project built using React functional components, Tailwind CSS, and React Router. It allows users to browse and search for movies, sort them and view details about each movie.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Browse Movies:** Users can browse a collection of movies with their titles, release date, and ratings displayed.
 
-### `npm start`
+- **Search Movies:** Users can search for movies by entering keywords in the search bar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Movie Details:** Users can view detailed information about a specific movie, including its synopsis, release date, cast, and reviews.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React:** The project is built using React, a JavaScript library for building user interfaces. It provides a component-based architecture and allows for efficient rendering and state management.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Functional Components:** React functional components are used to create reusable UI elements and manage the state of the application.
 
-### `npm run build`
+- **React Router:** React Router is used to handle client-side routing, allowing for navigation between different pages without a full page reload.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Tailwind CSS:** Tailwind CSS is a utility-first CSS framework used for styling the components. It provides a set of pre-defined classes that can be easily applied to create a responsive and visually appealing user interface.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project locally, follow these steps:
 
-### `npm run eject`
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd cybara-movie-app`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and visit `http://localhost:3000` to see the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+movie-list-project/
+  |- src/
+      |- components/
+          Card.jsx
+      |- pages/
+          |- MovieDetailsPage.js
+          |- MoviesPage.js
+      |- App.jsx
+      |- index.js
+      |- index.css
+  |- public/
+      |- index.html
+      |- ...
+  |- ...
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **src/components:** Contains the Movie Card reusable component used throughout the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **src/pages:** Contains the different pages of the application, such as Home, MoviePage, NotFound, and any additional pages you may create.
 
-## Learn More
+- **src/App.js:** The main component that handles routing and rendering of different pages.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **src/index.js:** The entry point of the application where React is rendered.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribution
 
-### Code Splitting
+Contributions to this project are welcome! If you have any ideas, improvements, or bug fixes, feel free to open an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this code for personal or commercial purposes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgements
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project was inspired by various movie listing and watchlist applications.
+- The data used for the movie listings is obtained from a public movie database API.
+- The project utilizes the React, React Router, and Tailwind CSS libraries.
